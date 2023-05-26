@@ -1,6 +1,6 @@
 {
   "name": "@dwidge/react-lib",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "",
   "exports": {
     "./*": "./lib/*.tsx"
