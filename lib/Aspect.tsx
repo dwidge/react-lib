@@ -5,7 +5,7 @@ import { Fill } from "./Flex";
 export function Aspect({
   a = 1,
   children,
-}: React.PropsWithChildren<{ a: number }>) {
+}: React.PropsWithChildren<{ a?: number }>) {
   return (
     <Outer a={a}>
       <Inner>{children}</Inner>
@@ -14,14 +14,15 @@ export function Aspect({
 }
 
 const Outer = styled.div<{ a: number }>`
+  flex: auto;
+  position: relative;
   width: 100%;
   padding-top: ${({ a = 1 }) => (100 / a) | 0}%;
-  position: relative;
 `;
 const Inner = styled(Fill)`
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
   top: 0;
   left: 0;
 `;

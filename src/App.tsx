@@ -4,6 +4,7 @@ import { Vertical, Center } from "@dwidge/react-lib/Flex";
 import { calcCSVArray } from "@dwidge/react-lib/utils/csv";
 import { Text } from "../lib/Text";
 import { Grid } from "../lib/Grid";
+import Embed from "../lib/Embed";
 
 const App: React.FC<{}> = () => {
   return (
@@ -32,6 +33,7 @@ const App: React.FC<{}> = () => {
             scourge of the seven seas shrouds reef sails stern loot salmagundi
             bucko.
           </TextBg>
+          <Embed src={`https://scratch.mit.edu/projects/857273421/embed`} />
           <TextBg>
             {`Pillage galleon barkadeer aye
 
@@ -39,11 +41,12 @@ const App: React.FC<{}> = () => {
             
             grapple bowsprit fathom. Fire ship
             overhaul gangplank yawl long boat
-            
+
             Cat o'nine tails holystone skysail
             splice the main brace lugsail.`}
           </TextBg>
         </Grid>
+        <Embed src={`https://scratch.mit.edu/projects/857273421/embed`} />
       </Foreground>
     </Background>
   );
