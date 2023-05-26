@@ -1,16 +1,28 @@
 import React from "react";
 import styled from "styled-components";
-import { Fill, Center } from "../lib/Flex";
+import { Vertical, Center } from "@dwidge/react-lib/Flex";
+import { calcCSVArray } from "@dwidge/react-lib/utils/csv";
 
 const App: React.FC<{}> = () => {
   return (
     <Background>
-      <Foreground>Hi.</Foreground>
+      <Foreground>
+        Hi.
+        <pre>
+          {calcCSVArray(
+            [
+              { id: "1", colA: "A1" },
+              { id: "2", colA: "A2" },
+            ],
+            ","
+          )}
+        </pre>
+      </Foreground>
     </Background>
   );
 };
 
-const Foreground = styled(Fill)`
+const Foreground = styled(Vertical)`
   background-color: cyan;
   min-height: 200px;
   min-width: 200px;
