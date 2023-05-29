@@ -6,12 +6,26 @@ import { Text } from "../lib/Text";
 import { Grid } from "../lib/Grid";
 import Embed from "../lib/Embed";
 import { parseEmbed } from "../lib/utils/parse";
+import useImageChooser from "../lib/hooks/useImageChooser";
 
 const App: React.FC<{}> = () => {
+  const [currentFile, ImageChooser] = useImageChooser({ id: "image" });
   return (
     <Background>
       <Foreground>
         <Grid>
+          {ImageChooser}
+          <button
+            onClick={() =>
+              alert(
+                currentFile
+                  ? currentFile.name + " is size " + currentFile.size
+                  : "No file"
+              )
+            }
+          >
+            Submit
+          </button>
           Hi. src=
           {parseEmbed(
             `<iframe src="https://scratch.mit.edu/projects/857273421/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>`
