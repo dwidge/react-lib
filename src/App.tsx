@@ -7,6 +7,7 @@ import { Grid } from "../lib/Grid";
 import Embed from "../lib/Embed";
 import { parseEmbed } from "../lib/utils/parse";
 import useImageChooser from "../lib/hooks/useImageChooser";
+import BarChart from "../lib/BarChart";
 
 const App: React.FC<{}> = () => {
   const [currentFile, ImageChooser] = useImageChooser({ id: "image" });
@@ -14,6 +15,7 @@ const App: React.FC<{}> = () => {
     <Background>
       <Foreground>
         <Grid>
+          <BarChart data={{ a: 5, b: 10, ccc: 20 }} />
           {ImageChooser}
           <button
             onClick={() =>
