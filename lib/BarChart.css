@@ -24,6 +24,7 @@
     var(--bar-color, #007bff)
   );
   background-repeat: no-repeat;
+  transition: background 1s;
 }
 .bar.vertical {
   flex-direction: column;
