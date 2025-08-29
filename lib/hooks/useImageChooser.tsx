@@ -2,11 +2,13 @@
 // Distributed under the Boost Software License, Version 1.0.
 // https://www.boost.org/LICENSE_1_0.txt
 
-import React, { useState, useEffect } from "react";
-import { useFileChooser } from "./useFileChooser";
+import React, { useEffect, useState } from "react";
 import { Vertical } from "../Flex";
+import { useFileChooser } from "./useFileChooser";
 
-const useImageChooser = ({ id = "image" }): [File | undefined, JSX.Element] => {
+const useImageChooser = ({
+  id = "image",
+}): [File | undefined, React.JSX.Element] => {
   const [preview, setPreview] = useState<string>("");
   const [file, FileChooser] = useFileChooser({ id });
 

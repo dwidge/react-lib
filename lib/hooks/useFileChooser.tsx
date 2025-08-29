@@ -7,7 +7,7 @@ import { Vertical } from "../Flex";
 
 export function useFileChooser({
   id = "image",
-}): [File | undefined, JSX.Element] {
+}): [File | undefined, React.JSX.Element] {
   const [file, setFile] = useState<File>();
 
   const C = (
