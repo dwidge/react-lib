@@ -23,14 +23,14 @@
   "license": "BSL-1.0",
   "devDependencies": {
     "@dwidge/buildy": "^0.1.8",
-    "@types/react": "^18.0.34",
-    "@types/react-dom": "^18.0.11",
+    "@types/react": "^19.0.14",
+    "@types/react-dom": "^19.0.0",
     "@types/styled-components": "^5.1.26"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "styled-components": "^5.3.9"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "styled-components": "^6.1.13"
   },
   "publishConfig": {
     "access": "public"
