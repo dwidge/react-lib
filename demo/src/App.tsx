@@ -1,13 +1,13 @@
+import { Center, Vertical } from "@dwidge/react-lib/Flex";
+import { calcCSVArray } from "@dwidge/react-lib/utils/csv";
 import React from "react";
 import styled from "styled-components";
-import { Vertical, Center } from "@dwidge/react-lib/Flex";
-import { calcCSVArray } from "@dwidge/react-lib/utils/csv";
-import { Text } from "../lib/Text";
-import { Grid } from "../lib/Grid";
-import Embed from "../lib/Embed";
-import { parseEmbed } from "../lib/utils/parse";
-import useImageChooser from "../lib/hooks/useImageChooser";
-import BarChart from "../lib/BarChart";
+import BarChart from "../../src/BarChart";
+import Embed from "../../src/Embed";
+import { Grid } from "../../src/Grid";
+import useImageChooser from "../../src/hooks/useImageChooser";
+import { Text } from "../../src/Text";
+import { parseEmbed } from "../../src/utils/parse";
 
 const App: React.FC<{}> = () => {
   const [currentFile, ImageChooser] = useImageChooser({ id: "image" });
@@ -22,7 +22,7 @@ const App: React.FC<{}> = () => {
               alert(
                 currentFile
                   ? currentFile.name + " is size " + currentFile.size
-                  : "No file"
+                  : "No file",
               )
             }
           >
@@ -30,7 +30,7 @@ const App: React.FC<{}> = () => {
           </button>
           Hi. src=
           {parseEmbed(
-            `<iframe src="https://scratch.mit.edu/projects/857273421/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>`
+            `<iframe src="https://scratch.mit.edu/projects/857273421/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>`,
           )}
           <TextBg>
             {calcCSVArray(
@@ -38,7 +38,7 @@ const App: React.FC<{}> = () => {
                 { id: "1", colA: "A1" },
                 { id: "2", colA: "A2" },
               ],
-              ","
+              ",",
             )}
           </TextBg>
           <TextBg>
