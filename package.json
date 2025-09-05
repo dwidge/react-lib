@@ -1,6 +1,6 @@
 {
   "name": "@dwidge/react-lib",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "author": "DWJ",
   "license": "BSL-1.0",
   "repository": {
@@ -22,7 +22,7 @@
     "src"
   ],
   "scripts": {
-    "prepare": "rimraf dist && ncp assets/ dist/ && tsc -b . tsconfig.cjs.json tsconfig.test.json",
+    "prepare": "rimraf dist && ncp assets/ dist/ && tsc -b . tsconfig.cjs.json",
     "test": "node --enable-source-maps --test --test-name-pattern"
   },
   "peerDependencies": {
