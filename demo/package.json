@@ -1,6 +1,6 @@
 {
   "name": "@dwidge/react-lib-demo",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "author": "DWJ",
   "license": "BSL-1.0",
   "repository": {
@@ -24,11 +24,13 @@
   "scripts": {},
   "devDependencies": {
     "@dwidge/buildy": "^0.1.8",
+    "@dwidge/react-lib": "^0.1.11",
     "@types/react": "^19.0.14",
     "@types/react-dom": "^19.0.0",
     "@types/styled-components": "^5.1.26"
   },
   "peerDependencies": {
+    "@dwidge/react-lib": "^0.1.11",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "styled-components": "^6.1.13"

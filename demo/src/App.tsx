@@ -1,5 +1,4 @@
-import { Center, Vertical } from "@dwidge/react-lib/Flex";
-import { calcCSVArray } from "@dwidge/react-lib/utils/csv";
+import { calcCSVArray, Center, Vertical } from "@dwidge/react-lib";
 import React from "react";
 import styled from "styled-components";
 import BarChart from "../../src/BarChart";
